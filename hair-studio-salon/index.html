@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Studio Salon | Premium Grooming & Beauty - Model Town, Rewari</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description"
+        content="Welcome to Hair Studio Salon in Model Town, Rewari. We offer premium men's and women's grooming services: styling, hair coloring, luxury facials, spa, bridal packages & more. Book your appointment now.">
+    <meta name="keywords"
+        content="Hair Studio Rewari, Hair Studio Salon, Salon Model Town Rewari, Best Salon in Rewari, Haircut Model Town, Grooming Rewari, Bridal Makeup Rewari, Barber Rewari">
+    <meta name="author" content="Hair Studio Salon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Page Preloader -->
+    <div id="loader" class="page-loader">
+        <div class="loader-content">
+            <div class="salon-loader-art">
+                <div class="loader-ring"></div>
+                <div class="loader-icons">
+                    <i class="fa-solid fa-comb comb-icon"></i>
+                    <i class="fa-solid fa-scissors scissor-icon"></i>
+                </div>
+            </div>
+            <div class="loader-logo">
+                <span class="red-text">HAIR STUDIO</span>
+            </div>
+        </div>
+    </div>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-brand" id="logo-brand">
+                <span class="red-text">HAIR STUDIO</span>
+                <span class="subtitle">SALON</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:09991267770" class="phone-btn" aria-label="Call Hair Studio">
+                    <i class="fa-solid fa-phone"></i> <span>099912 67770</span>
+                </a>
+                <button class="btn btn-red book-trigger" id="header-book-btn">Book Appointment</button>
+
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content-wrapper">
+                <div class="hero-text-content">
+                    <span class="hero-tagline"><span class="line"></span>THE ULTIMATE GROOMING DESTINATION</span>
+                    <h1 class="hero-title">Redefine Your <br><span class="red-gradient-text">Signature Look</span></h1>
+                    <p class="hero-description">Experience professional hair artistry and premium skin therapies at
+                        Model Town's premier luxury salon. Tailored services, master stylists, and a sanctuary of
+                        relaxation.</p>
+                    <div class="hero-actions-container">
+                        <button class="btn btn-red btn-large book-trigger">Book An Appointment</button>
+                        <a href="#services" class="btn btn-outline btn-large">Explore Services</a>
+                    </div>
+                </div>
+
+                <div class="hero-badge-card">
+                    <div class="badge-content">
+                        <span class="number">100%</span>
+                        <span class="text">Premium Care & <br>Aesthetic Excellence</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#services" class="scroll-down-indicator" aria-label="Scroll to services">
+                <span class="mouse-icon"><span class="wheel"></span></span>
+                <span class="text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">OUR MENU</span>
+                    <h2 class="section-title">Luxury Services Tailored For You</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-desc">Select a category below to explore our comprehensive menu of premium
+                        treatments for hair, skin, spa, and beauty packages.</p>
+                </div>
+
+                <!-- Gender Switch Tab Toggles -->
+                <div class="services-tabs">
+                    <button class="tab-toggle-btn active" data-tab="mens-services">
+                        <i class="fa-solid fa-mars"></i> Men's Services
+                    </button>
+                    <button class="tab-toggle-btn" data-tab="womens-services">
+                        <i class="fa-solid fa-venus"></i> Women's Services
+                    </button>
+                </div>
+
+                <!-- Men's Services Panel -->
+                <div class="services-panel active" id="mens-services">
+                    <div class="services-grid">
+
+                        <!-- Men's Hair Services -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                            <h3>Hair Services</h3>
+                            <p class="category-description">Expert haircuts, washing, styling, and premium treatments to
+                                keep your hair healthy and sharp.</p>
+                            <ul class="service-list">
+                                <li><span>Haircut</span></li>
+                                <li><span>Hair Wash</span></li>
+                                <li><span>Hair Styling</span></li>
+                                <li><span>Hair Coloring</span></li>
+                                <li><span>Hair Spa</span></li>
+                                <li><span>Keratin Treatment</span></li>
+                                <li><span>Scalp Treatment</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Men's Beard & Shaving -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-razor"></i>
+                            </div>
+                            <h3>Beard & Shaving</h3>
+                            <p class="category-description">Classic hot towel shaves, detailed beard line-ups, and
+                                grooming for the modern gentleman.</p>
+                            <ul class="service-list">
+                                <li><span>Beard Trim</span></li>
+                                <li><span>Beard Styling</span></li>
+                                <li><span>Clean Shave</span></li>
+                                <li><span>Mustache Grooming</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Men's Face & Skin Care -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </div>
+                            <h3>Face & Skin Care</h3>
+                            <p class="category-description">Revitalizing cleanses and professional facials targeting
+                                acne, aging, and skin polishing.</p>
+                            <ul class="service-list">
+                                <li><span>Cleanup</span></li>
+                                <li><span>Facial</span></li>
+                                <li><span>Anti-Acne Facial</span></li>
+                                <li><span>Anti-Aging Facial</span></li>
+                                <li><span>Face Polishing</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Men's Grooming -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <h3>Grooming</h3>
+                            <p class="category-description">Essential detailing, threading, detanning treatments, and
+                                waxing to look your neatest self.</p>
+                            <ul class="service-list">
+                                <li><span>Eyebrow Threading</span></li>
+                                <li><span>Waxing</span></li>
+                                <li><span>Detan Treatment</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Men's Hand & Foot Care -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-hand"></i>
+                            </div>
+                            <h3>Hand & Foot Care</h3>
+                            <p class="category-description">Meticulous cleaning, filing, massage, and conditioning for
+                                healthy hands and feet.</p>
+                            <ul class="service-list">
+                                <li><span>Manicure</span></li>
+                                <li><span>Pedicure</span></li>
+                            </ul>
+                        </div><!-- Men's Special Packages -->
+                        <div class="service-category-card highlight-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-gem"></i>
+                            </div>
+                            <h3>Special Packages</h3>
+                            <p class="category-description">All-in-one curated packages designed for grooms and special
+                                celebrations.</p>
+                            <ul class="service-list">
+                                <li><span>Groom Package</span></li>
+                                <li><span>Pre-Wedding Grooming Package</span></li>
+                            </ul>
+                            <button class="btn btn-red btn-full-width book-trigger">Book Package</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Women's Services Panel -->
+                <div class="services-panel" id="womens-services">
+                    <div class="services-grid">
+
+                        <!-- Women's Hair Services -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                            <h3>Hair Services</h3>
+                            <p class="category-description">Signature cuts, couture coloring, luxury balayage, keratin
+                                therapy, smoothing, and volume extensions.</p>
+                            <ul class="service-list">
+                                <li><span>Haircut & Trim</span></li>
+                                <li><span>Hair Wash</span></li>
+                                <li><span>Blow Dry</span></li>
+                                <li><span>Hair Styling</span></li>
+                                <li><span>Hair Coloring</span></li>
+                                <li><span>Highlights & Balayage</span></li>
+                                <li><span>Hair Spa</span></li>
+                                <li><span>Keratin Treatment</span></li>
+                                <li><span>Smoothening</span></li>
+                                <li><span>Rebonding</span></li>
+                                <li><span>Hair Extensions</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Women's Face & Skin Care -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-face-smile-beam"></i>
+                            </div>
+                            <h3>Face & Skin Care</h3>
+                            <p class="category-description">Custom facials targeting aging, hydration, brightening, and
+                                medical-grade skin polishing.</p>
+                            <ul class="service-list">
+                                <li><span>Cleanup</span></li>
+                                <li><span>Facial</span></li>
+                                <li><span>Anti-Aging Facial</span></li>
+                                <li><span>Brightening Facial</span></li>
+                                <li><span>Hydrating Facial</span></li>
+                                <li><span>Face Polishing</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Women's Threading & Grooming -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h3>Threading & Grooming</h3>
+                            <p class="category-description">Precise facial hair threading and shaping to define your
+                                natural facial contours.</p>
+                            <ul class="service-list">
+                                <li><span>Eyebrow Threading</span></li>
+                                <li><span>Upper Lip Threading</span></li>
+                                <li><span>Full Face Threading</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Women's Waxing -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h3>Waxing Services</h3>
+                            <p class="category-description">Silky smooth hot/cold wax treatments for arms, legs,
+                                underarms, bikini, or full body.</p>
+                            <ul class="service-list">
+                                <li><span>Arms Waxing</span></li>
+                                <li><span>Legs Waxing</span></li>
+                                <li><span>Underarm Waxing</span></li>
+                                <li><span>Full Body Waxing</span></li>
+                                <li><span>Bikini Waxing</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Women's Hand & Foot Care -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-hand-sparkles"></i>
+                            </div>
+                            <h3>Hand, Foot & Nails</h3>
+                            <p class="category-description">Nourishing spa manis & pedis, flawless gel polish overlay,
+                                detailed nail art, and custom acrylic extensions.</p>
+                            <ul class="service-list">
+                                <li><span>Manicure</span></li>
+                                <li><span>Pedicure</span></li>
+                                <li><span>Gel Polish</span></li>
+                                <li><span>Nail Art</span></li>
+                                <li><span>Nail Extensions</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Women's Makeup Services -->
+                        <div class="service-category-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-wand-magic"></i>
+                            </div>
+                            <h3>Makeup Services</h3>
+                            <p class="category-description">Exquisite professional makeup styling: HD, airbrush,
+                                engagement, and customized bridal packages.</p>
+                            <ul class="service-list">
+                                <li><span>Party Makeup</span></li>
+                                <li><span>Engagement Makeup</span></li>
+                                <li><span>Bridal Makeup</span></li>
+                                <li><span>HD Makeup</span></li>
+                                <li><span>Airbrush Makeup</span></li>
+                            </ul>
+                        </div><!-- Women's Special Packages -->
+                        <div class="service-category-card highlight-card">
+                            <div class="category-icon-wrapper">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <h3>Special Packages</h3>
+                            <p class="category-description">Premium bridal preparation, party prep, and all-day luxury
+                                spa packages for absolute radiance.</p>
+                            <ul class="service-list">
+                                <li><span>Bridal Package</span></li>
+                                <li><span>Pre-Bridal Package</span></li>
+                                <li><span>Party Ready Package</span></li>
+                            </ul>
+                            <button class="btn btn-red btn-full-width book-trigger">Book Package</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Style Diagnostic Quiz Section -->
+        <section id="quiz" class="quiz-section">
+            <div class="section-container">
+                <div class="quiz-glass-wrapper">
+                    <div class="quiz-header-content">
+                        <span class="quiz-tag">INTERACTIVE SERVICE FINDER</span>
+                        <h2>Discover Your Perfect Treatment</h2>
+                        <p>Not sure what your hair or skin needs? Take our quick diagnostic quiz and get a customized
+                            recommendation from our master stylists instantly.</p>
+                    </div>
+
+                    <div class="quiz-container" id="quiz-container">
+                        <!-- Step 1 of Quiz -->
+                        <div class="quiz-step active" data-step="1">
+                            <span class="quiz-progress-text">Question 1 of 3</span>
+                            <div class="quiz-progress-bar">
+                                <div class="bar-fill" style="width: 33.33%;"></div>
+                            </div>
+                            <h3 class="quiz-question">Select your primary area of focus:</h3>
+                            <div class="quiz-options-grid">
+                                <button class="quiz-option-btn" data-answer="hair">
+                                    <i class="fa-solid fa-scissors option-icon"></i>
+                                    <span>Hair Health & Styling</span>
+                                </button>
+                                <button class="quiz-option-btn" data-answer="skin">
+                                    <i class="fa-solid fa-face-smile option-icon"></i>
+                                    <span>Skin Care & Radiance</span>
+                                </button>
+                                <button class="quiz-option-btn" data-answer="special">
+                                    <i class="fa-solid fa-crown option-icon"></i>
+                                    <span>Special Occasion Prep</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 of Quiz (Hair Branch) -->
+                        <div class="quiz-step" data-step="2" data-branch="hair">
+                            <span class="quiz-progress-text">Question 2 of 3</span>
+                            <div class="quiz-progress-bar">
+                                <div class="bar-fill" style="width: 66.66%;"></div>
+                            </div>
+                            <h3 class="quiz-question">What is your main hair concern?</h3>
+                            <div class="quiz-options-grid">
+                                <button class="quiz-option-btn" data-answer="dry">Frizzy, dry, or damaged hair</button>
+                                <button class="quiz-option-btn" data-answer="thin">Flat, thin hair lacking
+                                    volume</button>
+                                <button class="quiz-option-btn" data-answer="dull">Dull color or needing a style
+                                    change</button>
+                                <button class="quiz-option-btn" data-answer="scalp">Scalp itching or dandruff
+                                    issues</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 of Quiz (Skin Branch) -->
+                        <div class="quiz-step" data-step="2" data-branch="skin">
+                            <span class="quiz-progress-text">Question 2 of 3</span>
+                            <div class="quiz-progress-bar">
+                                <div class="bar-fill" style="width: 66.66%;"></div>
+                            </div>
+                            <h3 class="quiz-question">What skin improvement are you looking for?</h3>
+                            <div class="quiz-options-grid">
+                                <button class="quiz-option-btn" data-answer="acne">Reduce acne, blemishes, or
+                                    oiliness</button>
+                                <button class="quiz-option-btn" data-answer="aging">Minimize fine lines & signs of
+                                    aging</button>
+                                <button class="quiz-option-btn" data-answer="glow">Restore deep hydration & healthy
+                                    glow</button>
+                                <button class="quiz-option-btn" data-answer="tan">Remove tan & even out skin
+                                    tone</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 of Quiz (Special Branch) -->
+                        <div class="quiz-step" data-step="2" data-branch="special">
+                            <span class="quiz-progress-text">Question 2 of 3</span>
+                            <div class="quiz-progress-bar">
+                                <div class="bar-fill" style="width: 66.66%;"></div>
+                            </div>
+                            <h3 class="quiz-question">What is the special event?</h3>
+                            <div class="quiz-options-grid">
+                                <button class="quiz-option-btn" data-answer="wedding">I am a groom/bride-to-be</button>
+                                <button class="quiz-option-btn" data-answer="party">Attending a party or social
+                                    gathering</button>
+                                <button class="quiz-option-btn" data-answer="shoot">A photoshoot or professional
+                                    event</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 of Quiz (All Branches) -->
+                        <div class="quiz-step" data-step="3">
+                            <span class="quiz-progress-text">Question 3 of 3</span>
+                            <div class="quiz-progress-bar">
+                                <div class="bar-fill" style="width: 100%;"></div>
+                            </div>
+                            <h3 class="quiz-question">How would you describe your preference?</h3>
+                            <div class="quiz-options-grid">
+                                <button class="quiz-option-btn" data-answer="quick">Quick, essential
+                                    maintenance</button>
+                                <button class="quiz-option-btn" data-answer="premium">Premium, deep-action
+                                    treatment</button>
+                                <button class="quiz-option-btn" data-answer="allin">Full package/makeover
+                                    session</button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Result (Hidden initially) -->
+                        <div class="quiz-result" id="quiz-result-card">
+                            <div class="result-badge"><i class="fa-solid fa-sparkles"></i> RECOMMENDATION</div>
+                            <h3 class="result-title" id="result-title">Premium Keratin Treatment & Scalp Spa</h3>
+                            <p class="result-desc" id="result-desc">Based on your concern about frizzy, dry hair and
+                                preference for a premium treatment, we recommend our deep-acting Keratin Treatment
+                                paired with a hydrating scalp treatment to restore brilliant shine and silkiness.</p>
+                            <div class="result-actions">
+                                <button class="btn btn-red book-recommended-btn" id="book-recommended-btn">Book This
+                                    Recommendation</button>
+                                <button class="btn btn-outline" id="restart-quiz-btn">Restart Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / About Us Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="experience-grid">
+                    <div class="experience-text">
+                        <span class="section-subtitle">THE HAIR STUDIO EXPERIENCE</span>
+                        <h2 class="section-title">Where Beauty Meets Expert Artistry</h2>
+                        <div class="section-divider"></div>
+                        <p>At Hair Studio Salon in Model Town, Rewari, we believe grooming is an art form. Our salon
+                            features state-of-the-art styling stations, relaxing treatment suites, and a highly skilled
+                            team of master stylists and skin therapists.</p>
+
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="feature-info">
+                                    <h4>Certified Stylists</h4>
+                                    <p>Our professionals undergo rigorous ongoing training in international style
+                                        trends.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div class="feature-info">
+                                    <h4>Uncompromised Hygiene</h4>
+                                    <p>100% sterilized tools, single-use disposable kits, and meticulous safety
+                                        protocols.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <div class="feature-info">
+                                    <h4>Elite Products</h4>
+                                    <p>We exclusively use industry-leading luxury brands like L'Oréal Professionnel,
+                                        Moroccanoil, and Dermalogica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-images">
+                        <div class="image-wrapper main-img">
+                            <img src="assets/womens_styling.png" alt="Luxury Hair Styling"
+                                class="exp-img animate-on-scroll">
+                            <span class="image-caption">Women's Hair Artistry</span>
+                        </div>
+                        <div class="image-wrapper secondary-img">
+                            <img src="assets/mens_grooming.png" alt="Premium Grooming"
+                                class="exp-img animate-on-scroll">
+                            <span class="image-caption">Men's Detail Grooming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">CLIENT STORIES</span>
+                    <h2 class="section-title">What Our Guests Say</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-wrapper">
+                        <!-- Testimonial Slides -->
+                        <div class="testimonial-slide active">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Hair Studio is hands down the best salon in Rewari! I got my
+                                pre-bridal package and bridal makeup done here. The artists are incredibly skilled, HD
+                                makeup looked so natural and lasted all night. Highly recommend Elena for hair color!"
+                            </p>
+                            <h4 class="client-name">Pooja Sharma</h4>
+                            <span class="client-location">Model Town, Rewari</span>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Outstanding men's service. The beard styling and haircut are
+                                extremely precise. They use warm towel shaves which feel incredibly premium. Definitely
+                                my go-to grooming spot near Model Town."</p>
+                            <h4 class="client-name">Rahul Yadav</h4>
+                            <span class="client-location">Model Town, Rewari</span>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The Anti-Aging Facial and Hydrating Hair Spa are pure luxury.
+                                The staff is polite, professional, and the overall ambiance is so serene. Cleanliness is
+                                top-notch. Very satisfied!"</p>
+                            <h4 class="client-name">Meenakshi Rao</h4>
+                            <span class="client-location">Rewari, Haryana</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="prev-testimonial" aria-label="Previous review"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <div class="slider-dots" id="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                        <button class="slider-btn next-btn" id="next-testimonial" aria-label="Next review"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">FIND US</span>
+                    <h2 class="section-title">Visit Our Salon</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Cards -->
+                    <div class="contact-info-panel">
+                        <div class="contact-info-card">
+                            <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="card-content">
+                                <h3>Address 1</h3>
+                                <p>Shop No 94-L,<br>near The Dot Coaching Centre,<br>Model Town, Rewari, Haryana 123401
+                                </p>
+                                <a href="https://maps.google.com/?q=Hair+Studio+Salon+Model+Town+Rewari" target="_blank"
+                                    class="contact-link">Get Directions <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <div class="card-content">
+                                <h3>Address 2</h3>
+                                <p>Hair Studio Salon<br>near Premi Paan Shop,<br>Model Town, Rewari, Haryana 123401
+                                </p>
+                                <a href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwio1b3nt-GWAxUAAAAAHQAAAAAQBQ..i&pvq=Cg0vZy8xMXpmNjV3OXR3IhcKEWhhaXIgc3R1ZGlvIHNhbG9uEAIYAw&lqi=ChFoYWlyIHN0dWRpbyBzYWxvbloTIhFoYWlyIHN0dWRpbyBzYWxvbpIBEnVuaXNleF9oYWlyZHJlc3Nlcg&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KSlFzyUCUQ05MX77vkP59uiw&daddr=Shop+no.+2,+near+Premi+Pan+Shop,+Model+Town,+Rewari,+Haryana+123401" target="_blank"
+                                    class="contact-link">Get Directions <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="card-content">
+                                <h3>Call & Book</h3>
+                                <p>Phone: 099912 67770</p>
+                                <p>Feel free to call us for direct bookings and consultations.</p>
+                                <div
+                                    style="display: flex; gap: 20px; align-items: center; margin-top: 12px; flex-wrap: wrap;">
+                                    <a href="tel:09991267770" class="contact-link">Call Now <i
+                                            class="fa-solid fa-phone"></i></a>
+                                    <a href="https://wa.me/919991267770" target="_blank" class="contact-link"
+                                        style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="card-content">
+                                <h3>Operating Hours</h3>
+                                <p>Monday - Sunday: 09:00 AM - 08:00 PM</p>
+                                <p>Open 7 Days a week including public holidays.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Styled Leaflet Map Container / Direction Search Card -->
+                    <div class="map-directions-panel">
+                        <div class="map-card-wrapper">
+                            <div class="map-overlay">
+                                <h3><span class="red-text">HAIR STUDIO</span> SALON</h3>
+                                <p>Model Town, Rewari</p>
+                                <div class="map-marker-pin">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                </div>
+                                <a href="https://maps.google.com/?q=Hair+Studio+Salon+Model+Town+Rewari" target="_blank"
+                                    class="btn btn-red"><i class="fa-solid fa-map-location-dot"></i> Open Google
+                                    Maps</a>
+                            </div>
+                            <div class="map-bg-grid"></div>
+                        </div>
+
+                        <div class="quick-inquiry-card">
+                            <h3>Quick Inquiry</h3>
+                            <form id="inquiry-form" class="inquiry-form">
+                                <div class="form-row">
+                                    <input type="text" id="inq-name" placeholder="Your Name" required>
+                                    <input type="tel" id="inq-phone" placeholder="Phone Number" required>
+                                </div>
+                                <textarea id="inq-message" placeholder="How can we help you?" rows="3"
+                                    required></textarea>
+                                <button type="submit" class="btn btn-red btn-full-width">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-brand-col">
+                <a href="#" class="logo-brand">
+                    <span class="red-text">HAIR STUDIO</span>
+                    <span class="subtitle">SALON</span>
+                </a>
+                <p>Model Town's premier grooming & hair artistry destination. Where style meets luxury care.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hairstudiosalon6?igsh=MWM5MmZndDB5OTRxaA%3D%3D&utm_source=qr"
+                        target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919991267770" target="_blank" aria-label="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#quiz">Style Finder Quiz</a></li>
+                    <li><a href="#experience">The Experience</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services-col">
+                <h3>Service Segments</h3>
+                <ul>
+                    <li><a href="#services" data-gender-select="men">Men's Hair & Beard</a></li>
+                    <li><a href="#services" data-gender-select="men">Men's Facial Spa</a></li>
+                    <li><a href="#services" data-gender-select="women">Women's Cut & Color</a></li>
+                    <li><a href="#services" data-gender-select="women">Bridal Makeup & Styling</a></li>
+                    <li><a href="#services" data-gender-select="women">Women's Luxury Facials</a></li>
+                    <li><a href="#services" data-gender-select="women">Nail Extensions & Art</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter-col">
+                <h3>Join Our Club</h3>
+                <p>Subscribe to receive styling guides, exclusive festival discounts, and special packages.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 Hair Studio Salon. All rights reserved.</p>
+                <p class="footer-credit">Design and Developed by <a href="https://hybridengineer.in/" target="_blank"
+                        rel="noopener noreferrer">Hybrid Engineer</a></p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Booking Modal (Wizard) -->
+    <div class="modal-backdrop" id="booking-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="close-booking-modal" aria-label="Close modal">&times;</button>
+
+            <!-- Wizard Header -->
+            <div class="wizard-header">
+                <h2>Book Your Appointment</h2>
+                <p>Hair Studio, Model Town, Rewari</p>
+
+                <!-- Progress Indicator -->
+                <div class="wizard-steps-indicator">
+                    <div class="step-indicator active" data-wizard-step="1">
+                        <span class="step-num">1</span>
+                        <span class="step-label">Select Services</span>
+                    </div>
+                    <div class="step-indicator" data-wizard-step="2">
+                        <span class="step-num">2</span>
+                        <span class="step-label">Date & Time</span>
+                    </div>
+                    <div class="step-indicator" data-wizard-step="3">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Details & Review</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wizard Content panels -->
+            <div class="wizard-content">
+
+                <!-- STEP 1: Select Services -->
+                <div class="wizard-panel active" data-panel="1">
+                    <div class="wizard-services-header">
+                        <div class="wizard-gender-select">
+                            <label class="radio-label">
+                                <input type="radio" name="wizard-gender" value="men" checked>
+                                <span class="radio-custom-btn"><i class="fa-solid fa-mars"></i> Men</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="wizard-gender" value="women">
+                                <span class="radio-custom-btn"><i class="fa-solid fa-venus"></i> Women</span>
+                            </label>
+                        </div>
+                        <p class="select-hint">Select one or more services to proceed:</p>
+                    </div>
+
+                    <!-- Men's Services List (Wizard) -->
+                    <div class="wizard-services-list active" id="wizard-men-services">
+                        <!-- Categories dynamically loaded or pre-rendered for selection -->
+                        <div class="wizard-cat-group">
+                            <h4>Hair Services</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="m-cut" data-name="Men's Haircut">
+                                    <div class="item-meta">
+                                        <span class="item-name">Haircut</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-wash" data-name="Men's Hair Wash">
+                                    <div class="item-meta">
+                                        <span class="item-name">Hair Wash</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-styling"
+                                    data-name="Men's Hair Styling">
+                                    <div class="item-meta">
+                                        <span class="item-name">Hair Styling</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-coloring"
+                                    data-name="Men's Hair Coloring">
+                                    <div class="item-meta">
+                                        <span class="item-name">Hair Coloring</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-spa" data-name="Men's Hair Spa">
+                                    <div class="item-meta">
+                                        <span class="item-name">Hair Spa</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-keratin"
+                                    data-name="Men's Keratin Treatment">
+                                    <div class="item-meta">
+                                        <span class="item-name">Keratin Treatment</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-scalp"
+                                    data-name="Men's Scalp Treatment">
+                                    <div class="item-meta">
+                                        <span class="item-name">Scalp Treatment</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-cat-group">
+                            <h4>Beard & Shaving</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="m-btrim" data-name="Beard Trim">
+                                    <div class="item-meta">
+                                        <span class="item-name">Beard Trim</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-bstyl" data-name="Beard Styling">
+                                    <div class="item-meta">
+                                        <span class="item-name">Beard Styling</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-shave" data-name="Clean Shave">
+                                    <div class="item-meta">
+                                        <span class="item-name">Clean Shave</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-must" data-name="Mustache Grooming">
+                                    <div class="item-meta">
+                                        <span class="item-name">Mustache Grooming</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-cat-group">
+                            <h4>Face & Skin Care</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="m-clean" data-name="Men's Cleanup">
+                                    <div class="item-meta">
+                                        <span class="item-name">Cleanup</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-facial" data-name="Men's Facial">
+                                    <div class="item-meta">
+                                        <span class="item-name">Facial</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-acne"
+                                    data-name="Men's Anti-Acne Facial">
+                                    <div class="item-meta">
+                                        <span class="item-name">Anti-Acne Facial</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-age"
+                                    data-name="Men's Anti-Aging Facial">
+                                    <div class="item-meta">
+                                        <span class="item-name">Anti-Aging Facial</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-polish"
+                                    data-name="Men's Face Polishing">
+                                    <div class="item-meta">
+                                        <span class="item-name">Face Polishing</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-cat-group">
+                            <h4>Special Packages</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="m-groom" data-name="Groom Package">
+                                    <div class="item-meta">
+                                        <span class="item-name">Groom Package</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="m-prewed"
+                                    data-name="Pre-Wedding Groom Package">
+                                    <div class="item-meta">
+                                        <span class="item-name">Pre-Wedding Package</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Women's Services List (Wizard) -->
+                    <div class="wizard-services-list" id="wizard-women-services">
+                        <div class="wizard-cat-group">
+                            <h4>Hair Services</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="w-cut"
+                                    data-name="Women's Haircut & Trim">
+                                    <div class="item-meta">
+                                        <span class="item-name">Haircut & Trim</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-blow" data-name="Blow Dry">
+                                    <div class="item-meta">
+                                        <span class="item-name">Blow Dry</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-color"
+                                    data-name="Women's Hair Coloring">
+                                    <div class="item-meta">
+                                        <span class="item-name">Hair Coloring</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-balay"
+                                    data-name="Highlights & Balayage">
+                                    <div class="item-meta">
+                                        <span class="item-name">Highlights & Balayage</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-keratin"
+                                    data-name="Women's Keratin Treatment">
+                                    <div class="item-meta">
+                                        <span class="item-name">Keratin Treatment</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-smooth" data-name="Smoothening">
+                                    <div class="item-meta">
+                                        <span class="item-name">Smoothening</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-cat-group">
+                            <h4>Face & Skin Care</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="w-clean" data-name="Women's Cleanup">
+                                    <div class="item-meta">
+                                        <span class="item-name">Cleanup</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-facial" data-name="Women's Facial">
+                                    <div class="item-meta">
+                                        <span class="item-name">Facial</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-bright"
+                                    data-name="Brightening Facial">
+                                    <div class="item-meta">
+                                        <span class="item-name">Brightening Facial</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-hydra" data-name="Hydrating Facial">
+                                    <div class="item-meta">
+                                        <span class="item-name">Hydrating Facial</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-cat-group">
+                            <h4>Makeup Services</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="w-party-mk" data-name="Party Makeup">
+                                    <div class="item-meta">
+                                        <span class="item-name">Party Makeup</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-bridal-mk"
+                                    data-name="Bridal Makeup">
+                                    <div class="item-meta">
+                                        <span class="item-name">Bridal Makeup</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-hd-mk" data-name="HD Makeup">
+                                    <div class="item-meta">
+                                        <span class="item-name">HD Makeup</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-cat-group">
+                            <h4>Special Packages</h4>
+                            <div class="wizard-services-grid">
+                                <div class="wizard-service-item" data-service-id="w-bridalk" data-name="Bridal Package">
+                                    <div class="item-meta">
+                                        <span class="item-name">Bridal Package</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-prebridalk"
+                                    data-name="Pre-Bridal Package">
+                                    <div class="item-meta">
+                                        <span class="item-name">Pre-Bridal Package</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                                <div class="wizard-service-item" data-service-id="w-ready"
+                                    data-name="Party Ready Package">
+                                    <div class="item-meta">
+                                        <span class="item-name">Party Ready Package</span>
+                                    </div>
+                                    <i class="fa-solid fa-circle-plus select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2: Date & Time -->
+                <div class="wizard-panel" data-panel="2">
+                    <div class="date-time-flex-container">
+                        <!-- Calendar Widget -->
+                        <div class="calendar-wrapper">
+                            <h4 class="sub-section-title">Select Date</h4>
+                            <div class="calendar-controls">
+                                <span id="calendar-month-year">June 2026</span>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="day-name">Su</div>
+                                <div class="day-name">Mo</div>
+                                <div class="day-name">Tu</div>
+                                <div class="day-name">We</div>
+                                <div class="day-name">Th</div>
+                                <div class="day-name">Fr</div>
+                                <div class="day-name">Sa</div>
+
+                                <!-- Render a grid of dates (pre-populated by JS or mockup) -->
+                                <div class="cal-day empty"></div>
+                                <div class="cal-day empty"></div>
+                                <div class="cal-day" data-date="2026-06-15">15</div>
+                                <div class="cal-day" data-date="2026-06-16">16</div>
+                                <div class="cal-day active" data-date="2026-06-17">17</div>
+                                <div class="cal-day" data-date="2026-06-18">18</div>
+                                <div class="cal-day" data-date="2026-06-19">19</div>
+                                <div class="cal-day" data-date="2026-06-20">20</div>
+                                <div class="cal-day" data-date="2026-06-21">21</div>
+                                <div class="cal-day" data-date="2026-06-22">22</div>
+                                <div class="cal-day" data-date="2026-06-23">23</div>
+                                <div class="cal-day" data-date="2026-06-24">24</div>
+                                <div class="cal-day" data-date="2026-06-25">25</div>
+                                <div class="cal-day" data-date="2026-06-26">26</div>
+                                <div class="cal-day" data-date="2026-06-27">27</div>
+                                <div class="cal-day" data-date="2026-06-28">28</div>
+                                <div class="cal-day" data-date="2026-06-29">29</div>
+                                <div class="cal-day" data-date="2026-06-30">30</div>
+                            </div>
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div class="time-slots-wrapper">
+                            <h4 class="sub-section-title">Select Time Slot</h4>
+                            <div class="time-slots-grid">
+                                <button class="time-slot-btn" data-time="09:00 AM">09:00 AM</button>
+                                <button class="time-slot-btn" data-time="10:00 AM">10:00 AM</button>
+                                <button class="time-slot-btn active" data-time="11:00 AM">11:00 AM</button>
+                                <button class="time-slot-btn" data-time="12:00 PM">12:00 PM</button>
+                                <button class="time-slot-btn" data-time="01:30 PM">01:30 PM</button>
+                                <button class="time-slot-btn" data-time="02:30 PM">02:30 PM</button>
+                                <button class="time-slot-btn" data-time="03:30 PM">03:30 PM</button>
+                                <button class="time-slot-btn" data-time="04:30 PM">04:30 PM</button>
+                                <button class="time-slot-btn" data-time="05:30 PM">05:30 PM</button>
+                                <button class="time-slot-btn" data-time="06:30 PM">06:30 PM</button>
+                                <button class="time-slot-btn" data-time="07:30 PM">07:30 PM</button>
+                                <button class="time-slot-btn" data-time="08:00 PM">08:00 PM</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Personal Details & Review -->
+                <div class="wizard-panel" data-panel="3">
+                    <div class="review-details-container">
+                        <!-- Booking Summary Side -->
+                        <div class="booking-summary-card">
+                            <h3>Appointment Summary</h3>
+                            <div class="summary-divider"></div>
+
+                            <div class="summary-row">
+                                <span class="sum-label">Date & Time:</span>
+                                <span class="sum-value" id="summary-datetime">June 17, 2026 at 11:00 AM</span>
+                            </div>
+
+                            <div class="summary-divider"></div>
+                            <div class="summary-services-list" id="summary-services-list">
+                                <!-- Dynamic List -->
+                                <div class="summary-item">
+                                    <span>Men's Haircut</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Side -->
+                        <form id="booking-details-form" class="booking-details-form">
+                            <div class="form-group">
+                                <label for="client-name">Full Name *</label>
+                                <input type="text" id="client-name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="client-phone">Phone Number *</label>
+                                <input type="tel" id="client-phone" required
+                                    placeholder="Enter your 10-digit mobile number">
+                            </div>
+                            <div class="form-group">
+                                <label for="client-email">Email Address</label>
+                                <input type="email" id="client-email"
+                                    placeholder="Enter your email (for booking receipt)">
+                            </div>
+                            <div class="form-group">
+                                <label for="client-notes">Special Requests / Instructions</label>
+                                <textarea id="client-notes"
+                                    placeholder="Any details, concerns, or requests for your stylist..."
+                                    rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Wizard Footer Action Buttons -->
+            <div class="wizard-footer">
+                <button class="btn btn-outline" id="wizard-back-btn" disabled>Back</button>
+                <div class="selected-services-indicator">
+                    <span id="selected-count">0 Services Selected</span>
+                </div>
+                <button class="btn btn-red" id="wizard-next-btn">Next <i
+                        class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Script file -->
+    <script src="app.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919991267770?text=Hi!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Hair%20Studio."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Special Offer Popup Modal -->
+    <div class="offer-popup-modal" id="offer-popup-modal">
+        <div class="offer-popup-backdrop" id="offer-popup-backdrop"></div>
+        <div class="offer-popup-content">
+            <button class="offer-popup-close" id="offer-popup-close" aria-label="Close Special Offer">&times;</button>
+            <div class="offer-popup-body">
+                <div class="offer-slider-container">
+                    <button class="offer-slider-btn prev-btn" id="offer-slider-prev" aria-label="Previous Offer">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="offer-slider-viewport">
+                        <div class="offer-slider-track" id="offer-slider-track">
+                            <div class="offer-slide">
+                                <img src="./images/H1.webp" alt="Special Offer 1 - 20% Off" class="offer-image">
+                            </div>
+                            <div class="offer-slide">
+                                <img src="./images/H2.webp" alt="Special Offer 2 - Spa & Facials" class="offer-image">
+                            </div>
+                              <div class="offer-slide">
+                                <img src="./images/H3.webp" alt="Special Offer 2 - Spa & Facials" class="offer-image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="offer-slider-btn next-btn" id="offer-slider-next" aria-label="Next Offer">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="offer-slider-dots" id="offer-slider-dots">
+                    <span class="offer-dot active" data-slide="0"></span>
+                    <span class="offer-dot" data-slide="1"></span>
+                </div>
+
+                <div class="offer-popup-actions">
+                    <button class="btn btn-red claim-offer-btn book-trigger" id="claim-offer-btn">Book Appointment Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Chatbot Button -->
+    <button class="chatbot-float" id="chatbot-toggle" aria-label="Open Chat Assistant">
+        <img src="assets/lady_assistant.png" alt="Aura Assistant">
+        <span class="chatbot-pulse"></span>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-info">
+                <div class="chatbot-avatar">
+                    <img src="assets/lady_assistant.png" alt="Aura Lady Assistant">
+                </div>
+                <div class="chatbot-name-wrapper">
+                    <span class="chatbot-title">Aura</span>
+                    <span class="chatbot-status">Online Assistant</span>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbot-close-btn" aria-label="Close Chat Window">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-message bot">
+                <div class="chat-bubble">
+                    Hi! I'm <strong>Aura</strong>, your virtual assistant at <strong>Hair Studio</strong>. How can I
+                    help you today?
+                </div>
+            </div>
+            <!-- Quick Replies -->
+            <div class="chat-quick-replies" id="chat-quick-replies">
+                <button class="quick-reply-btn" data-reply="Book an Appointment">Book Appointment</button>
+                <button class="quick-reply-btn" data-reply="What are your hours?">Salon Hours</button>
+                <button class="quick-reply-btn" data-reply="Where is the salon located?">Our Location</button>
+                <button class="quick-reply-btn" data-reply="What services do you offer?">Explore Services</button>
+            </div>
+        </div>
+
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type your message here..." aria-label="Type message">
+            <button id="chatbot-send" aria-label="Send message">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

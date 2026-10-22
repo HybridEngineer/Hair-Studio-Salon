@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Gallery | Hair Studio Salon - Model Town, Rewari</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description"
+        content="Explore the portfolio of Hair Studio Salon in Model Town, Rewari. View our transformations, hair highlights, precision beard trimming, styling, and salon interior.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Page Preloader -->
+    <div id="loader" class="page-loader">
+        <div class="loader-content">
+            <div class="salon-loader-art">
+                <div class="loader-ring"></div>
+                <div class="loader-icons">
+                    <i class="fa-solid fa-comb comb-icon"></i>
+                    <i class="fa-solid fa-scissors scissor-icon"></i>
+                </div>
+            </div>
+            <div class="loader-logo">
+                <span class="red-text">HAIR STUDIO</span>
+            </div>
+        </div>
+    </div>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header scrolled" id="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-brand" id="logo-brand">
+                <span class="red-text">HAIR STUDIO</span>
+                <span class="subtitle">SALON</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#" class="nav-link active">Gallery</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:09991267770" class="phone-btn" aria-label="Call Hair Studio">
+                    <i class="fa-solid fa-phone"></i> <span>099912 67770</span>
+                </a>
+                <a href="index.html#booking-modal" class="btn btn-red book-trigger">Book Appointment</a>
+
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="hero-section"
+            style="height: 45vh; min-height: 350px; background-image: url('assets/salon_interior.png');">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content-wrapper"
+                style="grid-template-columns: 1fr; text-align: center; justify-content: center; padding-top: 60px;">
+                <div class="hero-text-content">
+                    <span class="hero-tagline" style="justify-content: center;"><span
+                            class="line"></span>PORTFOLIO</span>
+                    <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 12px;">Our Visual <span
+                            class="red-gradient-text">Gallery</span></h1>
+                    <p class="hero-description" style="margin: 0 auto; font-size: 1.05rem;">A visual showcase of our
+                        master styling, detailed grooming transformations, and high-end salon ambiance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-container" style="padding-top: 60px;">
+                <!-- Gallery Filters -->
+                <!-- <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="hair">Hair Styling</button>
+                    <button class="filter-btn" data-filter="grooming">Men''s Grooming</button>
+                    <button class="filter-btn" data-filter="interior">Ambiance</button>
+                </div> -->
+
+                <!-- Gallery Carousel -->
+                <div class="gallery-carousel-container">
+                    <button class="carousel-control-btn prev-btn" id="gallery-carousel-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="gallery-carousel-viewport">
+                        <div class="gallery-carousel-track" id="gallery-carousel-track"></div>
+                    </div>
+
+                    <button class="carousel-control-btn next-btn" id="gallery-carousel-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators" id="gallery-carousel-indicators"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-brand-col">
+                <a href="index.html" class="logo-brand">
+                    <span class="red-text">HAIR STUDIO</span>
+                    <span class="subtitle">SALON</span>
+                </a>
+                <p>Model Town's premier grooming & hair artistry destination. Where style meets luxury care.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hairstudiosalon6?igsh=MWM5MmZndDB5OTRxaA%3D%3D&utm_source=qr"
+                        target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919991267770" target="_blank" aria-label="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#quiz">Style Finder Quiz</a></li>
+                    <li><a href="index.html#experience">The Experience</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="index.html#testimonials">Reviews</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services-col">
+                <h3>Service Segments</h3>
+                <ul>
+                    <li><a href="index.html#services" data-gender-select="men">Men's Hair & Beard</a></li>
+                    <li><a href="index.html#services" data-gender-select="men">Men's Facial Spa</a></li>
+                    <li><a href="index.html#services" data-gender-select="women">Women's Cut & Color</a></li>
+                    <li><a href="index.html#services" data-gender-select="women">Bridal Makeup & Styling</a></li>
+                    <li><a href="index.html#services" data-gender-select="women">Women's Luxury Facials</a></li>
+                    <li><a href="index.html#services" data-gender-select="women">Nail Extensions & Art</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter-col">
+                <h3>Join Our Club</h3>
+                <p>Subscribe to receive styling guides, exclusive festival discounts, and special packages.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 Hair Studio Salon. All rights reserved.</p>
+                <p class="footer-credit">Design and Developed by <a href="https://hybridengineer.in/" target="_blank"
+                        rel="noopener noreferrer">Hybrid Engineer</a></p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image"><i
+                class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Expanded View">
+            <div class="lightbox-caption" id="lightbox-caption">Caption text here</div>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image"><i
+                class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Script file -->
+    <script src="app.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919991267770?text=Hi!%20I%20would%20like%20to%20book%20an%20appointment%20at%20Hair%20Studio."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Chatbot Button -->
+    <button class="chatbot-float" id="chatbot-toggle" aria-label="Open Chat Assistant">
+        <img src="assets/lady_assistant.png" alt="Aura Assistant">
+        <span class="chatbot-pulse"></span>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-info">
+                <div class="chatbot-avatar">
+                    <img src="assets/lady_assistant.png" alt="Aura Lady Assistant">
+                </div>
+                <div class="chatbot-name-wrapper">
+                    <span class="chatbot-title">Aura</span>
+                    <span class="chatbot-status">Online Assistant</span>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbot-close-btn" aria-label="Close Chat Window">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-message bot">
+                <div class="chat-bubble">
+                    Hi! I'm <strong>Aura</strong>, your virtual assistant at <strong>Hair Studio</strong>. How can I
+                    help you today?
+                </div>
+            </div>
+            <!-- Quick Replies -->
+            <div class="chat-quick-replies" id="chat-quick-replies">
+                <button class="quick-reply-btn" data-reply="Book an Appointment">Book Appointment</button>
+                <button class="quick-reply-btn" data-reply="What are your hours?">Salon Hours</button>
+                <button class="quick-reply-btn" data-reply="Where is the salon located?">Our Location</button>
+                <button class="quick-reply-btn" data-reply="What services do you offer?">Explore Services</button>
+            </div>
+        </div>
+
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type your message here..." aria-label="Type message">
+            <button id="chatbot-send" aria-label="Send message">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
